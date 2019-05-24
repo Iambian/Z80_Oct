@@ -226,6 +226,6 @@ appear to be listed. The opcode includes a displacement value (ex. `RLC (IX+N)`)
 between the CB prefix and the extension dictated by that opcode (ex. `CB 06` 
 becomes `DD CB XX 06`)
 
-221 [FD] Prefix:
+253 [FD] Prefix:
 ----------------
 The same as the DD prefix, except it affects IY instead of IX
