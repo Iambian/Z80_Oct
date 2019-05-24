@@ -62,7 +62,7 @@ Main instruction set
 |6 | RET P      | POP AF     | JP P,$+3   | DI         | CALL P,NN | PUSH AF    | OR N       | RST 30H    |
 |7 | RET M      | LD SP,HL   | JP M,$+3   | EI         | CALL M,NN | [EXT FD]   | CP N       | RST 38H    |
 
-203 [CB] Prefix
+313 [CB] Prefix
 ---------------
 
 * 0YX
@@ -118,7 +118,7 @@ Main instruction set
 |7 | SET 7,B    | SET 7,C    | SET 7,D    | SET 7,E    | SET 7,H   | SET 7,L    | SET 7,(HL) | SET 7,A    |
 
 
-237 [ED] Prefix
+355 [ED] Prefix
 ---------------
 
 * 0YX
@@ -173,7 +173,7 @@ Main instruction set
 |6 | -- | -- | -- | -- | --| -- | -- | -- |
 |7 | -- | -- | -- | -- | --| -- | -- | -- |
 
-221 [DD] Prefix:
+335 [DD] Prefix:
 ----------------
 * 0YX
 
@@ -232,6 +232,6 @@ appear to be listed. The opcode includes a displacement value (ex. `RLC (IX+N)`)
 between the CB prefix and the extension dictated by that opcode (ex. `CB 06` 
 becomes `DD CB XX 06`)
 
-253 [FD] Prefix:
+375 [FD] Prefix:
 ----------------
 The same as the DD prefix, except it affects IY instead of IX
