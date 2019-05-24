@@ -1,5 +1,11 @@
 Z80 Instruction Set in Octal
 ============================
+Notes:
+* N represents a single byte constant value (8 bits)
+* NN represents a two byte constant value (16 bits)
+* Places that indicate $+2 or $+3 had their N or NN value assumed to be 0 because reasons
+* The Y in the labeling indicates the value in the first column, where X indicates the value in the first row. (e.g. `LD E,N` would be 036)
+* Many of the blank spots in the tables have a function, but aren't "documented". I'd fill them in but I didn't have a source for undocumented instructions immediately on-hand and I was having too much fun making tables to look up how to do things like color-coding in Markdown. Maybe tomorrow?
 
 Main instruction set
 --------------------
